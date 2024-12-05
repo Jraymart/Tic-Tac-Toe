@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe!</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid red;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 4fr;
+            gap:15px;
+        }
+        .controls{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+        <div class="controls">
+            <label>Player X: <input type="text" id="player1" placeholder="Player 1 Name"></label>
+            <label>Player O: <input type="text" id="player2" placeholder="Player 2 Name"></label>
+            <button id="start-button">Start Game</button>
+            <button id="restart-button">Restart Game</button>
+            
+        </div>
+
+        <div class="gameboard">
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const startbtn = document.querySelector("#start-button");
+        const restartbtn = document.querySelector("#restart-button");
+
+        startbtn.addEventListener("click", ()=>{
+            //console.log("start-button working");
+            //Game.start();
+        });
+        restartbtn.addEventListener("click", ()=>{
+            //console.log("restart-button working");
+            //Game.resetGame();
+        });
+
+    </script>
+</body>
+
+</html>
