@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #f2f7fb
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d3e2f2;
+    gap: 15px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 15px;
+    color: #f2f7fb;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #6a7fc1;
+}
+
+label {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+    gap: 15px;
+    background-color: #9cb6dd;
+    align-items: center;
+
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-height: 250px;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 25px;
+    background-color: #6a7fc1;
+}
+
+.gameboard {
+    justify-self: center;
+    display: none;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #6a7fc1;
+    gap: 10px;
+
+}
+
+.cell:hover {
+    background-color: #d3e2f2;
+}
+
+.cell {
+    background-color: #e7f0f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #414e6e;
+}
+
+
+.cell:first-of-type {
+    border-top-left-radius: 25px;
+}
+
+.cell:nth-of-type(3) {
+    border-top-right-radius: 25px;
+}
+
+.cell:nth-of-type(7) {
+    border-bottom-left-radius: 25px;
+}
+
+.cell:last-of-type {
+    border-bottom-right-radius: 25px;
+}
+
+#restart-button {
+    display: none;
+}
+
+button {
+    font-size: 24px;
+    border-radius: 12.5px;
+    background-color: #4a5989;
+    border: none;
+    height: 50px;
+}
+
+.button-group {
+    margin: auto auto 0 auto;
+}
+
+button:hover {
+    background-color: #414e6e;
+}
+
+button:active {
+    background-color: #262c40;
+}
+
+input {
+    color: black;
+    font-size: 18px;
+    border: 1px solid #e7f0f8;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.message {
+    display: none;
+    height: 75px;
+    align-items: center;
+    background-color: #d3e2f2;
+    border-radius: 15px;
+    justify-content: center;
+    text-wrap: wrap;
+    font-size: 28px;
+    color: #262c40;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #262c40;
+    width: 100%;
+    padding:25px;
+    text-align: center;
+}
