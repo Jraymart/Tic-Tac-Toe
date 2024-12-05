@@ -109,6 +109,7 @@ const startbtn = document.querySelector("#start-button");
                 else if (checkTie(Gameboard.getBoard())) {
                     gameOver = true;
                     messagebox.textContent = "DRAW!";
+                    restartbtn.style.display = "block";
                 } else {
                     currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
                     updateMessage(players[currentPlayerIndex].name);
